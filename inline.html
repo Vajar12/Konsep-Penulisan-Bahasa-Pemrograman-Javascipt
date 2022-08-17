@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Contoh -->
+    <input type="button" value="Kirim" onclick="confirm('Apakah data yang anda masukkan sudah benar?')">
+
+    <!-- Mengubah Konten Html -->
+    <h2>Apa yang dapat dilakukan Javascript?</h2>
+    <p id="change">1. JavaScript dapat mengubah konten HTML.</p>
+    <button type="button" onclick='document.getElementById("change").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+    <!-- Mengubah Nilai Atribut Html -->
+    <p>2. JavaScript dapat mengubah nilai atribut HTML.</p>
+    <p>Dalam hal ini JavaScript mengubah nilai atribut src (sumber) dari sebuah gambar.</p> 
+
+    <button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">Menyalakan lampu</button>
+    <img id="myImage" src="img/pic_bulboff.gif">
+    <button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Mematikan lampu</button>
+
+    <!-- Mengubah Gaya Elemen Javacript -->
+    <p id="fontSize">3. JavaScript dapat mengubah gaya pada sebuah elemen HTML.</p>
+    <button type="button" onclick="document.getElementById('fontSize').style.fontSize='35px'">Click Me!</button>
+
+    <!-- Menyembunyikan dan Memunculkan elemen Html -->
+    <p id="none">4. JavaScript dapat menyembunyikan elemen HTML.</p>
+    <button type="button" onclick="document.getElementById('none').style.display='none'">Click Me!</button>
+
+    <p>5. JavaScript dapat menampilkan elemen HTML yang tersembunyi.</p>
+    <p id="block" style="display:none">Hello JavaScript!</p>
+    <button type="button" onclick="document.getElementById('block').style.display='block'">Click Me!</button>
+
+
+</body>
+</html>
